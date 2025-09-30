@@ -2,7 +2,29 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_vq3a5"]
 
-[node name="Part_B" type="Node3D"]
+[node name="Climber" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00443482, 2.38419e-07, -4.81606e-05)
 
-[node name="PlaceholderCube" type="MeshInstance3D" parent="."]
+[node name="Head" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7348, 0)
+mesh = SubResource("BoxMesh_vq3a5")
+
+[node name="Body_middle" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75261, 0)
+mesh = SubResource("BoxMesh_vq3a5")
+
+[node name="Arm_right" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00199, 0, 0, 0, 0.158254, 0, 0, 0, 0.58259, 1.00274, 2.38505, 0)
+mesh = SubResource("BoxMesh_vq3a5")
+
+[node name="Arm_right2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.00199, 0, 0, 0, 0.158254, 0, 0, 0, 0.58259, -0.994729, 2.38795, -0.0029695)
+mesh = SubResource("BoxMesh_vq3a5")
+
+[node name="leg_right" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0299977, -0.157869, 0, 0.99955, -0.00473784, 0, 0, 0, 0.974292, -0.408547, 0.744635, 0)
+mesh = SubResource("BoxMesh_vq3a5")
+
+[node name="Leg_Right" type="MeshInstance3D" parent="."]
+transform = Transform3D(-0.0299977, -0.157869, 0, 0.99955, -0.00473784, 0, 0, 0, 0.974292, 0.442976, 0.744635, 0)
 mesh = SubResource("BoxMesh_vq3a5")

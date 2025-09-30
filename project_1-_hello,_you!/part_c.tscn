@@ -1,6 +1,14 @@
-[gd_scene format=3 uid="uid://clhttn3a0ep70"]
+[gd_scene load_steps=6 format=3 uid="uid://clhttn3a0ep70"]
 
-[node name="Part_C" type="Control"]
+[ext_resource type="Texture2D" uid="uid://d3cmjtfawxf61" path="res://icon.svg" id="1_6neb6"]
+[ext_resource type="Texture2D" uid="uid://crko4dcnxyyuj" path="res://Malice Mizer.jpeg" id="2_ml436"]
+[ext_resource type="Texture2D" uid="uid://ch4awoy6t8qv7" path="res://Plastic Tree.jpeg" id="3_duqtr"]
+[ext_resource type="Texture2D" uid="uid://bfrqqu2sbgcva" path="res://ZOMBIE.jpeg" id="4_ogrbs"]
+
+[sub_resource type="SystemFont" id="SystemFont_uemv7"]
+subpixel_positioning = 0
+
+[node name="BOARD!!" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -8,12 +16,50 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="PlaceholderLabel" type="Label" parent="."]
-layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 656.0
-theme_override_font_sizes/font_size = 20
-text = "Add more labels, images, and other Control nodes to this scene to build your personal poster for Part C.
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.259
+anchor_bottom = 0.152
+offset_left = 4.0
+offset_top = 55.0
+offset_right = -8.36801
+offset_bottom = 48.504
+scale = Vector2(0.996641, 0.973899)
+theme_override_font_sizes/font_size = 40
+text = "Gavin Bradley"
 
-Remember that you may need to scroll down to \"Theme Overrides > Font Sizes\" in the Inspector 
-to make your labels big enough to read. (This is font size 20px, for reference)."
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.001
+anchor_top = 0.077
+anchor_right = 0.332
+anchor_bottom = 0.441
+offset_left = -0.152
+offset_top = 138.104
+offset_right = 772.536
+offset_bottom = 138.232
+theme_override_fonts/normal_font = SubResource("SystemFont_uemv7")
+theme_override_font_sizes/normal_font_size = 30
+text = "A 'Fun Fact' about myself is that I like visual kei bands! They are bands that put emphasis on style and aesthetics. Some of my favorites are Plastic Tree, Malice Mizer, and ZOMBIE!"
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(346, 86)
+scale = Vector2(0.734375, 0.75)
+texture = ExtResource("1_6neb6")
+
+[node name="MaliceMizer" type="Sprite2D" parent="."]
+position = Vector2(86, 450)
+scale = Vector2(0.264063, 0.215896)
+texture = ExtResource("2_ml436")
+
+[node name="PlasticTree" type="Sprite2D" parent="."]
+position = Vector2(291, 448.625)
+scale = Vector2(0.282422, 0.283203)
+texture = ExtResource("3_duqtr")
+
+[node name="Zombie" type="Sprite2D" parent="."]
+position = Vector2(1025, 451)
+scale = Vector2(0.0612793, 0.0722364)
+texture = ExtResource("4_ogrbs")
